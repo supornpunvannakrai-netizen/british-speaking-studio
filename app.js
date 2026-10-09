@@ -184,6 +184,18 @@ function setToggleButton(buttonId, collection, id, activeText, inactiveText) {
 function renderShadowing() {
   const lesson = currentLesson();
   if (!lesson) return;
+  if ($('shadowLessonSelect').options.length !== lessons.length) {
+    $('shadowLessonSelect').replaceChildren(...lessons.map((item, index) => {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = `${item.number}. ${item.word || 'Needs Review'}${item.flags.length ? ' · Needs Review' : ''}`;
+      return option;
+    }));
+  }
+  $('shadowLessonSelect').value = String(state.currentIndex);
+  $('shadowPreviousLesson').disabled = state.currentIndex === 0;
+  $('shadowNextLesson').disabled = state.currentIndex === lessons.length - 1;
+  $('shadowLessonPosition').textContent = `${state.currentIndex + 1} / ${lessons.length}`;
   $('shadowLessonLabel').textContent = `LESSON ${lesson.number} · ${lesson.word || 'Needs Review'}`;
   $('shadowSentence').textContent = lesson.sentence || 'ไม่พบประโยคที่ตรวจสอบได้';
   $('shadowThai').textContent = lesson.thai || 'คำแปลภาษาไทยต้องตรวจทาน';
@@ -420,6 +432,9 @@ function bindEvents() {
   $('toggleDifficult').onclick = () => toggle('difficult', currentLesson().id);
   $('toggleFavourite').onclick = () => toggle('favourites', currentLesson().id);
   $('shadowFavourite').onclick = () => toggle('favourites', currentLesson().id);
+  $('shadowLessonSelect').onchange = (event) => openLesson(Number(event.target.value), 'shadowing');
+  $('shadowPreviousLesson').onclick = () => openLesson(state.currentIndex - 1, 'shadowing');
+  $('shadowNextLesson').onclick = () => openLesson(state.currentIndex + 1, 'shadowing');
   $('startShadowing').onclick = startShadowing;
   $('stopShadowing').onclick = () => stopPlayback();
   $('restartShadowing').onclick = startShadowing;

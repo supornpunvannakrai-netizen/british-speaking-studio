@@ -19,7 +19,7 @@ Open the local URL printed by the server. Microphone recording requires HTTPS or
 npm run build
 ```
 
-The validation checks the lesson count/schema, metadata, en-GB language lock, absence of an en-US fallback, audio cancellation, and Local Storage persistence.
+The build validates the lesson count/schema, metadata, en-GB language lock, absence of an en-US fallback, audio cancellation, and Local Storage persistence, then prepares `dist/` for deployment.
 
 ## Edit lesson data
 
@@ -50,7 +50,7 @@ Progress, bookmarks, difficult words, and the current lesson are stored in brows
 1. Create a new Vercel project named `british-speaking-studio` from this repository.
 2. Framework preset: **Other**.
 3. Build command: leave empty (or use `npm run build` as a check).
-4. Output directory: `.`
+4. Output directory: `dist` (also declared in `vercel.json`).
 5. Deploy a Preview first and test audio/microphone over HTTPS.
 
 No API keys or runtime secrets are required.

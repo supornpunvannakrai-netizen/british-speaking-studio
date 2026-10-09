@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10233f" />
+    <meta name="description" content="ฝึกฟัง พูด และ Shadowing ภาษาอังกฤษสำเนียง British English พร้อม 467 บทเรียน" />
+    <meta property="og:title" content="British Speaking Studio" />
+    <meta property="og:description" content="Read · Listen · Shadow · Repeat — ฝึก British English อย่างเป็นระบบ" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>British Speaking Studio — ฝึก British English</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="app-sidebar" id="appSidebar">
+        <a class="brand" href="#dashboard" aria-label="British Speaking Studio home">
+          <span class="brand-mark" aria-hidden="true">B</span>
+          <span><strong>British Speaking</strong><small>Studio</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="เมนูหลัก">
+          <button class="nav-item active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+          <button class="nav-item" data-view="lessons"><span>▦</span> All Lessons</button>
+          <button class="nav-item" data-view="practice"><span>▶</span> Practice</button>
+          <button class="nav-item" data-view="shadowing"><span>◉</span> Shadowing Studio</button>
+          <button class="nav-item" data-view="progress"><span>↗</span> My Progress</button>
+        </nav>
+
+        <div class="sidebar-progress">
+          <div class="sidebar-progress-head"><span>ความคืบหน้า</span><strong id="sidebarPercent">0%</strong></div>
+          <div class="progress-track"><span id="sidebarProgressBar"></span></div>
+          <small id="sidebarProgressText">0 จาก 467 บทเรียน</small>
+        </div>
+
+        <div class="privacy-note"><span>✓</span><p><strong>Private by design</strong><br />ความคืบหน้าและเสียงอัดอยู่บนอุปกรณ์นี้</p></div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button class="icon-button mobile-only" id="menuButton" aria-label="เปิดเมนู">☰</button>
+          <div class="topbar-copy"><p id="pageEyebrow">YOUR LEARNING SPACE</p><h1 id="pageTitle">Good to see you.</h1></div>
+          <div class="topbar-actions"><span class="voice-chip" id="voiceChip"><i></i><span>กำลังตรวจสอบเสียง UK…</span></span><button class="avatar" aria-label="โปรไฟล์ผู้เรียน">BS</button></div>
+        </header>
+
+        <div class="notice hidden" id="globalNotice" role="status"></div>
+
+        <section class="view active" id="view-dashboard" data-title="Good to see you." data-eyebrow="YOUR LEARNING SPACE">
+          <div class="hero-grid">
+            <article class="welcome-card">
+              <div><span class="section-label">TODAY'S PRACTICE</span><h2>Speak clearly.<br /><em>Sound natural.</em></h2><p>ฝึกทีละประโยค ฟังสำเนียง British English แล้วพูดตามในจังหวะของคุณ</p><button class="primary-button" id="continueButton">Continue Learning <span>→</span></button></div>
+              <div class="sound-orbit" aria-hidden="true"><span></span><span></span><span></span><span></span><b>UK</b></div>
+            </article>
+            <article class="quote-card"><span>“</span><blockquote>Small progress is still progress.</blockquote><p>ฝึกสั้น ๆ ทุกวัน ดีกว่ารอวันที่พร้อม</p></article>
+          </div>
+
+          <div class="stat-grid">
+            <article class="metric-card"><span class="metric-icon navy">Aa</span><div><small>บทเรียนทั้งหมด</small><strong id="dashboardTotal">—</strong><p>จากข้อมูลต้นฉบับ</p></div></article>
+            <article class="metric-card"><span class="metric-icon gold">✓</span><div><small>ฝึกแล้ว</small><strong id="dashboardDone">0</strong><p id="dashboardRemaining">เริ่มบทเรียนแรก</p></div></article>
+            <article class="metric-card"><span class="metric-icon mint">↗</span><div><small>ความคืบหน้า</small><strong id="dashboardPercent">0%</strong><p>บันทึกบนอุปกรณ์นี้</p></div></article>
+            <article class="metric-card"><span class="metric-icon rose">♡</span><div><small>รายการโปรด</small><strong id="dashboardFavourites">0</strong><p>กลับมาฝึกได้ง่าย</p></div></article>
+          </div>
+
+          <div class="dashboard-lower">
+            <article class="surface-card current-card"><div class="card-heading"><div><span class="section-label">CONTINUE WHERE YOU LEFT OFF</span><h3>บทเรียนล่าสุด</h3></div><button class="text-button" data-go="lessons">ดูทั้งหมด →</button></div><div id="currentLessonCard"></div></article>
+            <article class="surface-card quick-card"><div class="card-heading"><div><span class="section-label">QUICK PRACTICE</span><h3>เลือกโหมดฝึก</h3></div></div><button data-go="practice"><span>▶</span><div><strong>Practice</strong><small>ฟังคำศัพท์และประโยค</small></div><b>→</b></button><button data-go="shadowing"><span>◉</span><div><strong>Shadowing</strong><small>พูดตามเป็นรอบพร้อม Countdown</small></div><b>→</b></button></article>
+          </div>
+        </section>
+
+        <section class="view" id="view-lessons" data-title="All Lessons" data-eyebrow="EXPLORE THE LIBRARY">
+          <div class="lesson-toolbar surface-card"><label class="search-box"><span>⌕</span><input id="lessonSearch" type="search" placeholder="ค้นหาคำศัพท์ ประโยค หรือเลขบทเรียน…" /></label><div class="filter-tabs" id="filterTabs"><button class="active" data-filter="all">ทั้งหมด</button><button data-filter="todo">ยังไม่ได้ฝึก</button><button data-filter="done">ฝึกแล้ว</button><button data-filter="favourite">รายการโปรด</button><button data-filter="difficult">อ่านยาก</button><button data-filter="review">Needs Review</button></div></div>
+          <div class="lesson-summary"><p id="lessonResultCount">กำลังโหลดบทเรียน…</p><p><span class="review-dot"></span> รายการที่ควรตรวจเทียบ PDF จะแสดงป้าย Needs Review</p></div>
+          <div class="lesson-grid" id="lessonGrid"></div>
+          <button class="load-more hidden" id="loadMoreButton">แสดงเพิ่มเติม</button>
+        </section>
+
+        <section class="view" id="view-practice" data-title="Practice" data-eyebrow="LISTEN · READ · REPEAT">
+          <div class="practice-layout">
+            <aside class="lesson-rail surface-card"><label class="compact-search"><span>⌕</span><input id="railSearch" type="search" placeholder="ค้นหาบทเรียน" /></label><div id="railList"></div></aside>
+            <article class="practice-card surface-card">
+              <div class="lesson-meta"><span id="practiceNumber">LESSON —</span><span id="practicePage">PDF PAGE —</span><span class="review-badge hidden" id="practiceReview">Needs Review</span></div>
+              <div class="word-header"><div><h2 id="practiceWord">Loading…</h2><p id="practiceMeaning"></p><p class="ipa-text" id="practiceWordIpa"></p></div><button class="round-speak" id="speakWord" aria-label="ฟังคำศัพท์">▶</button></div>
+              <div class="sentence-panel"><span class="section-label">READ THE SENTENCE</span><p class="sentence-text" id="practiceSentence"></p><p class="thai-text" id="practiceThai"></p><p class="ipa-text" id="practiceSentenceIpa"></p></div>
+              <div class="practice-actions"><button class="primary-button" id="speakSentence">▶ ฟังประโยค</button><button class="secondary-button" id="repeatSentence">↻ เล่นซ้ำ</button><button class="secondary-button" id="stopAudio">■ หยุด</button></div>
+              <div class="settings-row"><label>ความเร็ว<select id="practiceSpeed"><option value="0.5">0.5×</option><option value="0.75" selected>0.75×</option><option value="1">1×</option></select></label><label class="switch-label"><input type="checkbox" id="showThai" checked /><span></span>คำแปลไทย</label><label class="switch-label"><input type="checkbox" id="showIpa" checked /><span></span>IPA</label></div>
+              <div class="lesson-actions"><button id="toggleDone">✓ ทำเครื่องหมายว่าฝึกแล้ว</button><button id="toggleDifficult">◇ อ่านยาก</button><button id="toggleFavourite">♡ รายการโปรด</button></div>
+              <div class="review-panel hidden" id="reviewPanel"></div>
+              <div class="lesson-nav"><button id="previousLesson">← ข้อก่อนหน้า</button><span id="lessonPosition">— / —</span><button id="nextLesson">ข้อถัดไป →</button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-shadowing" data-title="Shadowing Studio" data-eyebrow="HEAR IT · PAUSE · SAY IT">
+          <div class="shadowing-grid">
+            <article class="shadow-stage surface-card">
+              <div class="stage-top"><span class="section-label" id="shadowLessonLabel">LESSON —</span><button class="icon-button" id="shadowFavourite" aria-label="เพิ่มรายการโปรด">♡</button></div>
+              <h2 id="shadowSentence">Loading…</h2><p class="thai-text" id="shadowThai"></p><p class="ipa-text" id="shadowIpa"></p>
+              <div class="countdown hidden" id="countdown"><strong>3</strong><span>เตรียมพูดตาม</span></div>
+              <div class="shadow-status" id="shadowStatus"><i></i><span>พร้อมเริ่มฝึก</span></div>
+              <div class="shadow-controls"><button class="primary-button" id="startShadowing">▶ เริ่ม Shadowing</button><button class="secondary-button" id="stopShadowing">■ หยุด</button><button class="secondary-button" id="restartShadowing">↻ เริ่มใหม่</button></div>
+            </article>
+            <aside class="studio-controls surface-card"><span class="section-label">SESSION SETTINGS</span><label>ความเร็วเสียง<div class="segmented" id="shadowSpeed"><button data-value="0.5">0.5×</button><button class="active" data-value="0.75">0.75×</button><button data-value="1">1×</button></div></label><label>จำนวนรอบ<div class="segmented" id="repeatCount"><button class="active" data-value="1">1</button><button data-value="3">3</button><button data-value="5">5</button><button data-value="10">10</button></div></label><label>เวลาพูดตาม<select id="pauseDuration"><option value="2">2 วินาที</option><option value="3" selected>3 วินาที</option><option value="5">5 วินาที</option><option value="7">7 วินาที</option></select></label><div class="session-progress"><div><span>รอบปัจจุบัน</span><strong id="roundProgress">0 / 1</strong></div><div class="progress-track"><span id="roundProgressBar"></span></div></div></aside>
+          </div>
+          <article class="recording-card surface-card"><div><span class="section-label">YOUR VOICE</span><h3>ฟัง แล้วเปรียบเทียบ</h3><p>เสียงจะอยู่ในหน่วยความจำของเบราว์เซอร์นี้เท่านั้น และไม่ถูกส่งขึ้นเซิร์ฟเวอร์</p></div><div class="recording-controls"><button class="record-button" id="recordButton"><i></i><span>Record</span></button><button class="secondary-button" id="playOriginal">▶ เสียงต้นฉบับ</button><audio id="recordingPlayer" controls class="hidden"></audio></div><p class="recording-status" id="recordingStatus">พร้อมอัดเสียงเมื่อคุณพร้อม</p></article>
+        </section>
+
+        <section class="view" id="view-progress" data-title="My Progress" data-eyebrow="YOUR LEARNING JOURNEY">
+          <div class="progress-hero surface-card"><div class="progress-ring" id="progressRing"><span id="progressRingText">0%</span></div><div><span class="section-label">OVERALL PROGRESS</span><h2 id="progressHeadline">เริ่มต้นการเดินทางของคุณ</h2><p id="progressCopy">เลือกบทเรียนแรก แล้วฝึกฟังและพูดตามในแบบของคุณ</p><button class="primary-button" data-go="practice">ฝึกต่อจากเดิม →</button></div></div>
+          <div class="progress-columns"><article class="surface-card progress-list"><div class="card-heading"><div><span class="section-label">BOOKMARKS</span><h3>รายการโปรด</h3></div><strong id="favouriteCount">0</strong></div><div id="favouriteList" class="mini-list"></div></article><article class="surface-card progress-list"><div class="card-heading"><div><span class="section-label">FOCUS LIST</span><h3>คำศัพท์ที่อ่านยาก</h3></div><strong id="difficultCount">0</strong></div><div id="difficultList" class="mini-list"></div></article></div>
+          <article class="surface-card local-data-card"><div><span>⌁</span><div><h3>ข้อมูลของคุณอยู่ที่นี่</h3><p>เว็บไซต์บันทึกความคืบหน้า รายการโปรด และคำศัพท์ที่อ่านยากไว้ใน Local Storage ของเบราว์เซอร์ ไม่ต้องสมัครสมาชิก</p></div></div><button class="secondary-button" id="exportProgress">Export Progress</button></article>
+        </section>
+
+        <footer><span>British Speaking Studio</span><p>เสียงอ่านใช้ British English (en-GB) ที่ติดตั้งในอุปกรณ์ · ไม่มีการเปลี่ยนเป็น American English โดยอัตโนมัติ</p></footer>
+      </main>
+    </div>
+    <div class="sidebar-backdrop hidden" id="sidebarBackdrop"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

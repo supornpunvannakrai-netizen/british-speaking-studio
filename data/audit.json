@@ -1,0 +1,567 @@
+{
+  "generatedFrom": "Original ZIP index.html embedded dataset",
+  "generatedAt": "2026-10-09",
+  "totalRecords": 467,
+  "highestLessonNumber": 469,
+  "needsReviewCount": 52,
+  "missingLessonNumbers": [
+    208,
+    254,
+    296,
+    400,
+    421
+  ],
+  "duplicateLessonNumbers": [
+    277,
+    278,
+    279
+  ],
+  "duplicateWords": [
+    "recommend",
+    "beautiful",
+    "difficult",
+    "patient",
+    "improve",
+    "purpose",
+    "foreign",
+    "honest",
+    "yacht",
+    "convenient",
+    "curious",
+    "journey",
+    "useful",
+    "careful",
+    "angry",
+    "amazing",
+    "annoyed",
+    "basic",
+    "brilliant",
+    "careless",
+    "active",
+    "alone",
+    "awake",
+    "clever",
+    "damage",
+    "either",
+    "further",
+    "lively",
+    "messy",
+    "noisy",
+    "rarely",
+    "roughly",
+    "thirsty",
+    "tiny",
+    "unusual",
+    "cancel",
+    "collect",
+    "deliver",
+    "discuss",
+    "borrow",
+    "continue",
+    "certain",
+    "communicate"
+  ],
+  "needsReview": [
+    {
+      "id": "p19-n52",
+      "number": 52,
+      "page": 19,
+      "word": "Immediately",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p20-n56",
+      "number": 56,
+      "page": 20,
+      "word": "Neighbour",
+      "flags": [
+        "thai-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p28-n81",
+      "number": 81,
+      "page": 28,
+      "word": "Worry",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p30-n85",
+      "number": 85,
+      "page": 30,
+      "word": "Appreciating",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p30-n86",
+      "number": 86,
+      "page": 30,
+      "word": "Difficult times",
+      "flags": [
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p31-n87",
+      "number": 87,
+      "page": 31,
+      "word": "Adventure",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p31-n88",
+      "number": 88,
+      "page": 31,
+      "word": "Avoid",
+      "flags": [
+        "thai-review",
+        "sentence-noise",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p33-n94",
+      "number": 94,
+      "page": 33,
+      "word": "Freedom",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p35-n100",
+      "number": 100,
+      "page": 35,
+      "word": "Remember",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p36-n101",
+      "number": 101,
+      "page": 36,
+      "word": "Allow",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p50-n142",
+      "number": 142,
+      "page": 50,
+      "word": "Muscle",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p64-n181",
+      "number": 181,
+      "page": 64,
+      "word": "ActuallyE",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p65-n184",
+      "number": 184,
+      "page": 65,
+      "word": "Approach",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p73-n210",
+      "number": 210,
+      "page": 73,
+      "word": "Empty",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p74-n213",
+      "number": 213,
+      "page": 74,
+      "word": "Future",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p87-n252",
+      "number": 252,
+      "page": 87,
+      "word": "Easily",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p90-n259",
+      "number": 259,
+      "page": 90,
+      "word": "Nervous",
+      "flags": [
+        "thai-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p96-n277",
+      "number": 277,
+      "page": 96,
+      "word": "Active",
+      "flags": [
+        "duplicate-number"
+      ]
+    },
+    {
+      "id": "p96-n278",
+      "number": 278,
+      "page": 96,
+      "word": "Alike",
+      "flags": [
+        "duplicate-number"
+      ]
+    },
+    {
+      "id": "p96-n279",
+      "number": 279,
+      "page": 96,
+      "word": "Awake",
+      "flags": [
+        "duplicate-number"
+      ]
+    },
+    {
+      "id": "p97-n277",
+      "number": 277,
+      "page": 97,
+      "word": "Angry",
+      "flags": [
+        "duplicate-number"
+      ]
+    },
+    {
+      "id": "p97-n278",
+      "number": 278,
+      "page": 97,
+      "word": "Beautifully",
+      "flags": [
+        "duplicate-number"
+      ]
+    },
+    {
+      "id": "p97-n279",
+      "number": 279,
+      "page": 97,
+      "word": "Carelessly",
+      "flags": [
+        "sentence-noise",
+        "duplicate-number"
+      ]
+    },
+    {
+      "id": "p101-n289",
+      "number": 289,
+      "page": 101,
+      "word": "Ready",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p102-n294",
+      "number": 294,
+      "page": 102,
+      "word": "Angry",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p105-n303",
+      "number": 303,
+      "page": 105,
+      "word": "Huge",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p111-n319",
+      "number": 319,
+      "page": 111,
+      "word": "Likely",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p112-n322",
+      "number": 322,
+      "page": 112,
+      "word": "Safe",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p112-n324",
+      "number": 324,
+      "page": 112,
+      "word": "Silly",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p114-n328",
+      "number": 328,
+      "page": 114,
+      "word": "Awake",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "sentence-noise",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p116-n336",
+      "number": 336,
+      "page": 116,
+      "word": "Messy",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p120-n347",
+      "number": 347,
+      "page": 120,
+      "word": "Announce",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p120-n348",
+      "number": 348,
+      "page": 120,
+      "word": "Arrange'     '",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p121-n349",
+      "number": 349,
+      "page": 121,
+      "word": "Article",
+      "flags": [
+        "thai-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p121-n351",
+      "number": 351,
+      "page": 121,
+      "word": "Belong",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "sentence-noise",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p122-n353",
+      "number": 353,
+      "page": 122,
+      "word": "Border",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p123-n356",
+      "number": 356,
+      "page": 123,
+      "word": "Branch",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p124-n359",
+      "number": 359,
+      "page": 124,
+      "word": "Contact",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p125-n362",
+      "number": 362,
+      "page": 125,
+      "word": "Cover",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p125-n363",
+      "number": 363,
+      "page": 125,
+      "word": "Customer",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p128-n372",
+      "number": 372,
+      "page": 128,
+      "word": "Escape",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p131-n381",
+      "number": 381,
+      "page": 131,
+      "word": "Imagine'",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p132-n382",
+      "number": 382,
+      "page": 132,
+      "word": "Introduce",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p132-n383",
+      "number": 383,
+      "page": 132,
+      "word": "Invent",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p133-n385",
+      "number": 385,
+      "page": 133,
+      "word": "Lesson'",
+      "flags": [
+        "sentence-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p133-n386",
+      "number": 386,
+      "page": 133,
+      "word": "Level",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p136-n395",
+      "number": 395,
+      "page": 136,
+      "word": "Package",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p138-n403",
+      "number": 403,
+      "page": 138,
+      "word": "Record",
+      "flags": [
+        "thai-review",
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p141-n411",
+      "number": 411,
+      "page": 141,
+      "word": "Share'",
+      "flags": [
+        "sentence-review",
+        "thai-review",
+        "missing-data"
+      ]
+    },
+    {
+      "id": "p143-n418",
+      "number": 418,
+      "page": 143,
+      "word": "Subject",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p144-n420",
+      "number": 420,
+      "page": 144,
+      "word": "Total",
+      "flags": [
+        "sentence-noise"
+      ]
+    },
+    {
+      "id": "p157-n458",
+      "number": 458,
+      "page": 157,
+      "word": "Awareness",
+      "flags": [
+        "sentence-ipa-review",
+        "missing-data"
+      ]
+    }
+  ],
+  "note": "Duplicate words can be intentional. No translations or missing lesson content were invented or corrected without the source PDF."
+}
